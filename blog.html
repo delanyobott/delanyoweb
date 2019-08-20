@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="styles/styles.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <title>Blog | Delanyo Agbenyo</title>
+  </head>
+  <body class="page-five">
+    <div class="top-header">
+      <header><h3>delanyo agbenyo</h3></header>
+
+      <!--Page Navigation: injected from resources/nav.html-->
+      <iframe
+        src="/resources/nav.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+    </div>
+
+    <div class="container">
+      <main class="tile">
+        <div class="wrapper">
+          <section>
+            <h4>articles</h4>
+            <p>I write to help me think and share what I learn, or observe.</p>
+          </section>
+
+          <section>
+            <p>
+              <a href="/blog/it-is-alive.html"
+                >Launching my website (It's all fun!)</a
+              >
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <!--Newsletter: injected from resources/newsletter.html-->
+      <iframe
+        src="/resources/newsletter.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+
+      <!--sidebar: injected from rsources/aside.html-->
+      <iframe
+        src="/resources/aside.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+    </div>
+
+    <!--Page footer: injected from resources/footer.html-->
+    <iframe
+      src="/resources/footer.html"
+      onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+    ></iframe>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="newsletter tile">
+      <h4>Newsletter</h4>
+      <p>
+        I write one article, thought or case study a month, no spam and
+        definitely no pop ups, straight to your inbox. Sign up below:
+      </p>
+      <form
+        name="newsletter"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+        class="newsletter"
+      >
+        <label for="email">Your email address</label>
+        <input required type="email" name="email" id="email" />
+        <div data-netlify-recaptcha="true"></div>
+        <input type="submit" value="JOIN NOW" />
+      </form>
+    </article>
+  </body>
+</html>

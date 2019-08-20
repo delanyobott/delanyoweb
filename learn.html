@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="styles/styles.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <title>Learn Web Stuffs | Delanyo Agbenyo</title>
+  </head>
+  <body class="page-four">
+    <div class="top-header">
+      <header><h3>delanyo agbenyo</h3></header>
+
+      <!--Page Navigation: injected from resources/nav.html-->
+      <iframe
+        src="/resources/nav.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+    </div>
+
+    <div class="container">
+      <main class="tile">
+        <div class="wrapper">
+          <section class="featured last">
+            <h4 class="section-title">learn web development today!</h4>
+            <p>
+              Do you wanna gain a new skill to create resilient things on the
+              web? Don't worry. I help nice folks learn solid fronted
+              development. I'll show you exactly how to start and end.
+            </p>
+            <p>
+              I prepared a series of no certified course to help you build up
+              your fundamentals in web standards.
+            </p>
+            <p>
+              Throughout this process we'll learn and build around three
+              essential technologies &mdash; HTML, CSS and JavaScript, used for
+              creating websites. At the end of the course you gonna have your
+              own website, developed by you.
+            </p>
+            <p>
+              If you're interested in learning and building cool and great web
+              stuffs, then let's rock and roll!
+              <button type="submit">
+                <a id="hire" href="https://t.me/owl_web">JOIN MY CHANNEL</a>
+              </button>
+            </p>
+          </section>
+        </div>
+      </main>
+
+      <!--Newsletter: injected from resources/newsletter.html-->
+      <iframe
+        src="/resources/newsletter.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+
+      <!--sidebar: injected from rsources/aside.html-->
+      <iframe
+        src="/resources/aside.html"
+        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+      ></iframe>
+    </div>
+
+    <!--Page footer: injected from resources/footer.html-->
+    <iframe
+      src="/resources/footer.html"
+      onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+    ></iframe>
+  </body>
+</html>
