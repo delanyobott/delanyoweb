@@ -191,6 +191,10 @@ main section {
   margin-bottom: 0;
 }
 
+.article section {
+  border-bottom: none;
+}
+
 cite {
   display: block;
   margin-top: 0.3em;
@@ -320,10 +324,6 @@ footer a {
 
   .article {
     padding: 0 15em;
-  }
-
-  .article section {
-    border-bottom: none;
   }
 
   .portfolio {
