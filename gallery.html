@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +18,7 @@
     <div class="top-header">
       <header><h3>delanyo agbenyo</h3></header>
 
-      <!--Page Navigation: injected from resources/nav.html-->
+      <!--Page Navigation: injected from resources/nav.html
       <iframe
         src="/resources/nav.html"
         onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
@@ -34,7 +35,7 @@
           </p>
         </section>
 
-        <!--Gallery-->
+        <!--Gallery
         <div class="portfolio">
           <figure>
             <img src="/images/meme.jpg" alt="a picture of me" />
@@ -166,28 +167,23 @@
           </figure>
         </div>
 
-        <!--scroll up button-->
+        <!--scroll up button
         <div>
           <button onclick="topFunction()" id="myBtn" title="Go to top">
             &uarr;
           </button>
         </div>
-      </main>
 
-      <!--Newsletter: injected from resources/newsletter.html-->
+        <!--Newsletter: injected from resources/newsletter.html
       <iframe
         src="/resources/newsletter.html"
         onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
       ></iframe>
+      </main>
 
-      <!--sidebar: injected from resources/aside.html
-      <iframe
-        src="/resources/aside.html"
-        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
-      ></iframe>-->
-    </div>
+      
 
-    <!--Page footer: injected from resources/footer.html-->
+    <!--Page footer: injected from resources/footer.html
     <iframe
       src="/resources/footer.html"
       onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"

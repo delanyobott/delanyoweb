@@ -10,17 +10,7 @@
       media="print"
       onload="this.media='all'"
     />
-    <script
-      defer
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
-    <script defer>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-3864792273269782",
-        enable_page_level_ads: true
-      });
-    </script>
-    <title>Blog | Delanyo Agbenyo</title>
+    <title>Delanyo Agbenyo | Blog</title>
   </head>
   <body class="page-five">
     <div class="top-header">
@@ -33,36 +23,27 @@
       ></iframe>
     </div>
 
-    <div class="container">
-      <main class="tile">
-        <div class="wrapper">
-          <section>
-            <h4>articles</h4>
-            <p>I write to help me think and share what I learn, or observe.</p>
-          </section>
+    <main>
+      <section>
+        <h4>Articles</h4>
+        <p>I write and share what I learn or am thinking about or I observe.</p>
+      </section>
 
-          <section>
-            <p>
-              <a href="/blog/it-is-alive.html"
-                >Launching my website (It's all fun!)</a
-              >
-            </p>
-          </section>
-        </div>
-      </main>
-
-      <!--Newsletter: injected from resources/newsletter.html-->
+      <section class="articles">
+        <h4>Recent Articles</h4>
+        <a href="/blog/2019/it-is-alive.html">
+          <p>
+            Launching my website (It's all fun!)
+            <small class="date">15th August 2019</small>
+          </p>
+        </a>
+      </section>
+      <!--Newsletter section: injected from resources/newsletter.html-->
       <iframe
         src="/resources/newsletter.html"
         onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
       ></iframe>
-
-      <!--sidebar: injected from resources/aside.html
-      <iframe
-        src="/resources/aside.html"
-        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
-      ></iframe>-->
-    </div>
+    </main>
 
     <!--Page footer: injected from resources/footer.html-->
     <iframe
