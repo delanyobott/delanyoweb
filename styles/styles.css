@@ -13,11 +13,11 @@
 body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
-  line-height: 1.8rem;
+  line-height: 1.6rem;
 }
 
 a {
-  border-bottom: 0.13rem solid tomato;
+  border-bottom: 0.1rem solid #555;
   color: #000;
   text-decoration: none;
 }
@@ -25,40 +25,50 @@ a {
 /* Header and navigation */
 .top-header {
   position: sticky;
+  background-color: #fff;
   top: 0;
+  display: flex;
+  padding: 0.5rem 0;
+  border-bottom: 0.5rem solid #cc6b5a;
+  z-index: 1;
 }
 
 header {
-  background-color: #333;
-  padding: 0.25rem 0;
+  margin: auto;
 }
 
 header h3 {
-  padding-left: 0.2rem;
+  color: #78c0a8;
+  border: 0.3rem solid #78c0a8;
   margin: 0;
-  color: rgb(223, 117, 99);
+  line-height: normal;
+  padding: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+nav {
+  margin: auto;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0.3rem 0;
-  background-color: rgb(223, 117, 99);
   margin: 0;
 }
 
 nav ul li {
   display: inline;
-  margin-left: 0.6rem;
+  margin-left: 0.2rem;
 }
 
 nav ul li a {
-  color: rgb(223, 117, 99);
+  color: #555;
   font-weight: normal;
-  padding: 0.3rem 0.5rem;
+  padding: 0.33rem;
   border-radius: 0.15rem;
   margin: 0;
-  background-color: #333;
   border-bottom: none;
+  border: 0.1rem solid #555;
 }
 
 /* current page */
@@ -70,20 +80,28 @@ nav ul li a {
 .page-six .gallery,
 .page-seven .projects,
 .page-eight .reference {
-  color: orange;
-  background-color: #fff;
+  color: #78c0a8;
+  border: 0.1rem solid #78c0a8;
 }
 
 /* main page, newsletter and sidebar */
+.profile-pic {
+  width: 60%;
+  margin: auto;
+}
+
 .profile-picture {
   float: left;
-  width: 30vmin;
-  height: 30vmin;
-  margin: 0 1em 0 0;
-  padding: 0.2em;
+  width: 45vmin;
+  height: 45vmin;
+  margin: 0 0 0.5em 0;
+  padding: 0.1em;
   border-radius: 50%;
-  border: 0.3em solid rgb(223, 117, 99);
-  shape-outside: circle(50%);
+  border: 0.1em solid #78c0a8;
+}
+
+.clf {
+  clear: both;
 }
 
 main {
@@ -105,7 +123,37 @@ main section p {
 h4 {
   padding: 0;
   margin: 0;
-  color: rgb(223, 117, 99);
+  color: #78c0a8;
+}
+
+.quote {
+  width: 40%;
+  margin: 0 auto;
+}
+
+blockquote {
+  font-size: 1.4rem;
+  width: 80%;
+  margin: 1.5rem auto 0;
+  font-style: italic;
+  color: #555;
+  border-left: 0.3rem solid #cc6b5a;
+  padding: 1rem 1rem 1rem 3rem;
+  line-height: 2rem;
+  position: relative;
+}
+
+blockquote::before {
+  content: "\201C";
+  color: #cc6b5a;
+  font-size: 3.5em;
+  position: absolute;
+  left: 0.3rem;
+  top: 1.5rem;
+}
+
+blockquote::after {
+  content: " ";
 }
 
 cite {
@@ -119,7 +167,7 @@ cite {
   border: 0.1rem solid #1f031f;
   padding: 0.5rem;
   border-radius: 1rem;
-  margin: 1rem auto 0;
+  margin: 1rem 0;
   width: 90%;
 }
 
@@ -179,28 +227,11 @@ p img {
 
 */
 
-/* scroll up button */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 1em;
-  right: 0.1em;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: #fff;
-  cursor: pointer;
-  padding: 1em 0.2em;
-  border-radius: 0.2em;
-  font-size: 1em;
-}
-
 /* Forms */
 
 input {
   padding: 0.5em 1.5em;
-  border: 0.25em solid #cc6b5a;
+  border: 0.25em solid #78c0a8;
   border-radius: 0.2em;
 }
 
@@ -212,7 +243,7 @@ button[type="submit"] {
   padding: 0.5em 2em;
   color: #fff;
   font-size: 1em;
-  background-color: #cc6b5a;
+  background-color: #78c0a8;
   border: 0;
   border-radius: 0.2em;
 }
@@ -220,6 +251,7 @@ button[type="submit"] {
 button[type="submit"] a {
   color: #fff;
   font-weight: normal;
+  border-bottom: none;
   font-size: 1.18em;
 }
 
@@ -231,29 +263,46 @@ form label {
 /* footer */
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 2rem;
-  margin: 0;
-  color: #fff;
+  padding: 1rem 3rem;
+  color: #aaa;
   background-color: #1f031f;
-  font-size: 90%;
+  font-size: 85%;
 }
 
 footer a {
-  color: #fff;
+  color: #aaa;
   font-weight: normal;
+  border-bottom: 0.1rem solid #aaa;
 }
 
-.footer-section {
-  width: 75%;
-  margin: auto;
+footer h3 {
+  margin: 0;
+  padding: 0;
+}
+
+footer p {
+  margin-top: 0;
+}
+
+.footer-contact {
+  margin: 0;
+}
+
+.footer-contact a {
+  margin-right: 0.8rem;
+}
+
+.footer-licence {
+  margin: 0;
+}
+
+.footer-links {
+  margin: 0;
 }
 
 .footer-links ul {
   padding: 0;
+  margin-top: 0;
 }
 
 .footer-links ul li {
@@ -263,10 +312,14 @@ footer a {
 
 .footer-links ul li a {
   text-decoration: none;
-  margin-left: 0.5em;
-  padding: 0.5em;
+  margin-right: 0.8rem;
   font-weight: normal;
-  border-bottom: 0.15em solid orange;
+  border-bottom: 0.15rem solid #aaa;
+}
+
+.foot {
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Large Screen: 50em */
@@ -278,19 +331,6 @@ footer a {
   main {
     width: 50%;
     margin: auto;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin: 0 3rem;
-    width: initial;
-    margin: 3rem 5rem;
-  }
-
-  .grid section {
-    margin: 0;
   }
 
   .footer-section {
