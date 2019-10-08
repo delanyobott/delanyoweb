@@ -13,14 +13,17 @@
     <title>Welcome | delanyo agbenyo</title>
   </head>
   <body class="page-one">
-    <div class="top-header">
-      <header><h3>ad</h3></header>
+    <div class="header-design">
+      <div class="top-header">
+        <header><h3>ad</h3></header>
 
-      <!--Page Navigation: injected from resources/nav.html-->
-      <iframe
-        src="/resources/nav.html"
-        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
-      ></iframe>
+        <!--Page Navigation: injected from resources/nav.html-->
+        <iframe
+          src="/resources/nav.html"
+          onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+        ></iframe>
+      </div>
+      <div class="design"></div>
     </div>
 
     <!--Main Page-->
@@ -88,13 +91,14 @@
           <cite>&mdash; Ms Frizzle</cite>
         </blockquote>
       </section>
+    </main>
 
-      <!--Newsletter section: injected from resources/newsletter.html-->
+    <!--Newsletter section: injected from resources/newsletter.html
       <iframe
         src="/resources/newsletter.html"
         onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
       ></iframe>
-    </main>
+    </main>-->
 
     <!--Page footer: injected from resources/footer.html-->
     <iframe

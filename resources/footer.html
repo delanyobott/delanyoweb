@@ -47,10 +47,12 @@
       </div>
 
       <div class="foot">
-        <small
-          >&copy;
+        <small>&copy;</small>
+        <small id="year">
           <script>
-            document.write(new Date().getFullYear());
+            document.getElementById(
+              "year"
+            ).innerHTML = new Date().getFullYear();
           </script>
           Delanyo Agbenyo
         </small>

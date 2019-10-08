@@ -14,14 +14,17 @@
     <title>About me | delanyo agbenyo</title>
   </head>
   <body class="page-two">
-    <div class="top-header">
-      <header><h3>ad</h3></header>
+    <div class="header-design">
+      <div class="top-header">
+        <header><h3>ad</h3></header>
 
-      <!--Page Navigation: injected from resources/nav.html-->
-      <iframe
-        src="/resources/nav.html"
-        onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
-      ></iframe>
+        <!--Page Navigation: injected from resources/nav.html-->
+        <iframe
+          src="/resources/nav.html"
+          onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
+        ></iframe>
+      </div>
+      <div class="design"></div>
     </div>
 
     <!--Main page-->
@@ -78,11 +81,11 @@
         </p>
       </section>
 
-      <!--Newsletter section: injected from resources/newsletter.html-->
+      <!--Newsletter section: injected from resources/newsletter.html
       <iframe
         src="/resources/newsletter.html"
         onload="this.before((this.contentDocument.body || this.contentDocument).children[0]);this.remove()"
-      ></iframe>
+      ></iframe>-->
     </main>
 
     <!--Page footer: injected from resources/footer.html-->

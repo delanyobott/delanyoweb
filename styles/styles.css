@@ -14,6 +14,7 @@ body {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6rem;
+  background-color: #78c0a8;
 }
 
 a {
@@ -23,14 +24,17 @@ a {
 }
 
 /* Header and navigation */
-.top-header {
-  position: sticky;
-  background-color: #fff;
+.header-design {
   top: 0;
-  display: flex;
-  padding: 0.5rem 0;
-  border-bottom: 0.5rem solid #cc6b5a;
+  background-color: #fff;
   z-index: 1;
+  position: sticky;
+  margin-bottom: 0;
+}
+.top-header {
+  padding: 0.5rem 0;
+  border-bottom: 0.5rem dashed #78c0a8;
+  display: flex;
 }
 
 header {
@@ -39,7 +43,10 @@ header {
 
 header h3 {
   color: #78c0a8;
-  border: 0.3rem solid #78c0a8;
+  border-top: 0.25rem dotted #78c0a8;
+  border-right: 0.25rem dotted #5f5f5f;
+  border-bottom: 0.25rem dotted #78c0a8;
+  border-left: 0.25rem dotted #5f5f5f;
   margin: 0;
   line-height: normal;
   padding: 0.5rem;
@@ -62,13 +69,17 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #555;
+  color: #5f5f5f;
   font-weight: normal;
   padding: 0.33rem;
   border-radius: 0.15rem;
   margin: 0;
   border-bottom: none;
-  border: 0.1rem solid #555;
+  border: 0.1rem solid #5f5f5f;
+}
+
+.design {
+  border: 0.5rem solid #78c0a8;
 }
 
 /* current page */
@@ -92,12 +103,15 @@ nav ul li a {
 
 .profile-picture {
   float: left;
-  width: 45vmin;
-  height: 45vmin;
-  margin: 0 0 0.5em 0;
-  padding: 0.1em;
+  width: 50vmin;
+  height: 50vmin;
+  margin: 0 0 0.5rem 0;
+  padding: 0.25em;
   border-radius: 50%;
-  border: 0.1em solid #78c0a8;
+  border-top: 0.4rem solid #78c0a8;
+  border-right: 0.4rem solid #5f5f5f;
+  border-bottom: 0.4rem solid #78c0a8;
+  border-left: 0.4rem solid #5f5f5f;
 }
 
 .clf {
@@ -106,13 +120,18 @@ nav ul li a {
 
 main {
   padding: 0.5rem;
+  border-bottom: 0.5rem dashed #5f5f5f;
 }
 
 main section {
   padding: 0.8rem;
-  margin: 0.5rem 0;
-  border: 0.2rem solid #ddd;
+  margin: 0.8rem 0;
+  background-color: #fff;
   border-radius: 0.5rem;
+}
+
+main > :first-child {
+  margin-top: 0;
 }
 
 main section p {
@@ -137,7 +156,6 @@ blockquote {
   margin: 1.5rem auto 0;
   font-style: italic;
   color: #555;
-  border-left: 0.3rem solid #cc6b5a;
   padding: 1rem 1rem 1rem 3rem;
   line-height: 2rem;
   position: relative;
@@ -145,15 +163,11 @@ blockquote {
 
 blockquote::before {
   content: "\201C";
-  color: #cc6b5a;
+  color: #555;
   font-size: 3.5em;
   position: absolute;
   left: 0.3rem;
   top: 1.5rem;
-}
-
-blockquote::after {
-  content: " ";
 }
 
 cite {
@@ -263,9 +277,9 @@ form label {
 /* footer */
 
 footer {
-  padding: 1rem 3rem;
+  padding: 1rem 3.5rem;
   color: #aaa;
-  background-color: #1f031f;
+  background-color: #5f5f5f;
   font-size: 85%;
 }
 
@@ -318,7 +332,7 @@ footer p {
 }
 
 .foot {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
 }
 
