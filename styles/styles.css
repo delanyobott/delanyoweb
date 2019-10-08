@@ -43,10 +43,7 @@ header {
 
 header h3 {
   color: #78c0a8;
-  border-top: 0.25rem dotted #78c0a8;
-  border-right: 0.25rem dotted #5f5f5f;
-  border-bottom: 0.25rem dotted #78c0a8;
-  border-left: 0.25rem dotted #5f5f5f;
+  border: 0.3rem dotted #78c0a8;
   margin: 0;
   line-height: normal;
   padding: 0.5rem;
@@ -80,6 +77,7 @@ nav ul li a {
 
 .design {
   border: 0.5rem solid #78c0a8;
+  margin: 0;
 }
 
 /* current page */
@@ -121,6 +119,7 @@ nav ul li a {
 main {
   padding: 0.5rem;
   border-bottom: 0.5rem dashed #5f5f5f;
+  margin-top: 0;
 }
 
 main section {
